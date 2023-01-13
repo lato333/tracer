@@ -1,0 +1,5 @@
+fluentd:
+  server: "fluentd-service.efk.svc.cluster.local"
+  port: 5170
+
+namespace: "adls-jupyter"
