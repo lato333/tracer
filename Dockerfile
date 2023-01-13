@@ -1,5 +1,4 @@
 ARG BUILDER_IMAGE=debian:bullseye
-#ARG BASE_IMAGE=alpine:3.14
 ARG BASE_IMAGE=debian:bullseye
 ARG BUILDPLATFORM=linux/amd64
 ARG BUILDPLATFORM=linux/amd64
@@ -36,4 +35,3 @@ COPY tracer.yml /etc/tracer/
 RUN rm -f /var/run
 
 ENTRYPOINT ["/bin/tracer","-config","/etc/tracer/tracer.yml"]
-#ENTRYPOINT ["sleep","infinity"]
